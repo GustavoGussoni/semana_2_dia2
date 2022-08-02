@@ -112,17 +112,119 @@
         <section class="section_two">
              <div class="div_one">
                  <span class="text_line">Aula 11</span>
-                 <span class="text_line">Aula 12</span>
+                 <span class="text_line">Aula 11</span>
                  <p class="p_one">
                   Teste de parágrafo para gerar Border Box com display: inline-block
                  </p>
              </div>
+        </section>
+        <section class="section_three">
+            <ul>Unidades de medida do css
+                <li>Unidades de medida <strong>absolutas</strong>: são definidas pela física, como o píxel, centímetro, metro, etc.
+                    são medidas fixas e não mudam conforme as especificações do dispositivo. 
+                    são unidades estáticas.
+                    <ol>
+                        <li>
+                            pixel - é um ponto na tela. como ele é uma unidade de medida <strong>absoluta</strong>, seu valor é fixo.
+                            um ponto da tela é um ponto na tela, independente da tela.
+                        </li>                        
+                    </ol>
+                </li>
+                <li>Unidades de medida <strong>relativas</strong>: são calculadas tendo como base outro elemento ou unidade de medida
+                    definida. essas unidades são ajustadas conforme o comportamento da tela e com base nas definições realizadas
+                    são unidades <strong>flexíveis</strong>
+                    <ol>
+                        <li>
+                            rem - é uma unidade de medida <strong>relativa</strong>, ou seja, vai depender de outro elemento.
+                            o rem é relativo ao font size definido no root.
+                        </li>
+                        <li>
+                            em - é uma unidade de medida <strong>relativa,</strong>, ou seja, vai depender de outro elemento. 
+                            o em é relativo ao font size definido no elemento pai.
+                        </li>
+                        <li>
+                            percentagem - é uma unidade de medida <strong>relativa</strong>, ou seja, vai depender de outro elemento, ou unidade de medida.
+                            0% é definido relativo ao tamanho do pai do elemento.
+                        </li>
+                        <li>
+                            vw - é uma unidade de medida <strong>relativa</strong>, ou seja, vai depender de outro elemento, ou unidade de medida.
+                            o vw é definido relativo ao tamanho da view, janela.
+                            o vw define o comprimento do elemento e cada unidade corresponde a 1% da janela.
+                        </li>
+                        <li>
+                            vh - é uma unidade de medida <strong>relativa</strong>, ou seja, vai depender de outro elemento, ou unidade de medida.
+                            o vh é definido relativo ao tamanho da view, janela.
+                            o vh define a altura do elemento e cada unidade corresponde a 1% da janela.
+                        </li>
+                    </ol>
+                </li>
+            </ul>                 
+        </section>
 
+        <!---->
+        <section class="section_four">Aula 12
+            <p class="p_two"> <!-- aqui ele obedece os 800px, nao acompanha a tela-->
+                <ul class="ul_one p_two">
+                    <li>
+                        % - relativo ao valor do elemento pai dessa propriedade
+                    </li>
+                    <li>
+                        em - relativo ao tamanho da fonte atual do elemento
+                    </li>
+                    <li>
+                        rem - relativo ao tamanho da fonte do root da página (por exemplo, o elemento html). "rem" = root)
+                    </li>
+                    <li>
+                        vh - relativo à altura da janela de visualização (desktop ou mobile). 1 vh = 1/100 da altura da janela de visualização
+                    </li>
+                    <li>
+                        vw - relativo à largura da janela de visualização. 1vw = 1/100 da largura da janela de visualização
+                    </li>
+                    <li>
+                        vmin - relativo à menor dimensão da janela de visualização (por exemplo, para orientação de retrato, a largura é menor do que a altura, portanto, é relativa à largura). 1vmin = 1/100 da dimensaão menor da janela de visualização
+                    </li>
+                    <li>
+                        vmax - relativo à maior dimensão da janela de visualização (por exemplo, altura para orientação de retrato). 1vmax = 1/100 da dimensão maior da janela de visualização.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="section_five"> Nem sempre está claro qual dessas opções é melhor usar para cada tipo de propriedade CSS. Por exemplo, % é geralmente mais apropriado para propriedades relacionadas ao layout, como largura, do que para tamanho da fonte.
+             <!--aqui foi colocado unidade relativa %, por isso a caixa se adapta à tela-->                
+                <ul class="ul_two p_three"> 
+                    <li>
+                        Percentual(%): Você deseja que um elemento filho tenha 10% da largura do pai como margem para que nunca preencha todo o elemento pai. Se o tamanho do pai mudar, a margem também será atualizada.
+                    </li>
+                    <li>
+                        em: Você deseja que a fonte de um elemento filho tenha metade do tamanho da fonte de seu pai(por exemplo, o parágrafo sob o título de uma seção).
+                    </li>
+                    <li>
+                        rem: O tamanho da fonte deve ser o dobro do tamanho da fonte do elemento raiz. Pode ser assim que você dimensiona seus cabeçalhos, porque todos eles devem ter o mesmo tamanho, independentemente do contêiner pai.
+                    </li>
+                    <li>
+                        vh: Sua página deve sempre ter a altura da janela de visualização.
+                    </li>
+                    <li>
+                        vw: Você tem uma seção com texto que deve ter a metade da largura da janela de visualização.
+                    </li>
+                    <li>
+                        vmin: Você tem uma imagem que deve ser sempre tão larga quanto a menor dimensão da janela de visualização. Em um dispositivo móvel no modo retrato, a imagem será tão ampla quanto a largura da janela de visualização.
+                    </li>
+                    <li>
+                        vmax: Você não se importa se uma imagem for cortada porque você deseja que ela preencha completamente a dimensão maior da janela de visualização. Por exemplo, se a imagem de um padrão for usada como plano de fundo.
+                    </li>
+                    <ul>
+                        <strong>Dica!</strong>
+                        <li>No geral, quando e como você escolhe suas unidades CSS se resumem a algumas perguntas:</li>
+
+                        <li>Eu quero que o meu estilo seja dimensionado quando o tamanho da janela de visualização mudar?</li>
+                        <li>Se eu quiser que ele seja escalonado, ao que eu quero que ele seja relativo? Depois de responder a essas perguntas, é muito mais fácil definir qual unidade usar!</li>
+                    </ul>
+                </ul>            
         </section>
       </main>
       <footer>
-
-
       </footer>
 </body>
 </html>
