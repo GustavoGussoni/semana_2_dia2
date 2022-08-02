@@ -1,0 +1,38 @@
+ body {
+      margin: 0;
+      padding: 0;
+ }
+ body * span {
+      margin: 0;
+      padding: 0;
+ }
+
+.section_one { 
+      display: inline-block;
+      background-color: #8080a3;
+      width: 0px 0px 0px 100px;
+      border: 15px solid blue;
+      padding: 0px 0px 0px 0px;
+      margin: 50px 500px 0px 50px;
+      color: black;
+      }
+.section_two {
+      margin: 50px;
+      display: inline-block;
+      
+}
+.text_line {
+      display: inline-block;
+      border: 15px solid black;
+      margin: 10px;
+      padding: 10px;
+      background-color: #862e9c;
+      border-radius: 4px;
+      color: #fff;     
+}
+.p_one {    
+      display: inline-block;  
+      border: solid 15px #ff6206;
+      margin: 18px;
+}
+
